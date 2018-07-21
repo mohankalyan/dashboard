@@ -1,5 +1,45 @@
 @import '../scss/variables';
 
-a{
-    color: $anchor;
+.body-page{
+    background: $greyLight;
+}
+
+#side-menu{
+    color:white;
+    background: $purpleLight;
+    width: 280px;
+    position: absolute;
+    height: 100%;
+    
+    a{
+        display:block;
+        padding: 15px 15px 15px 30px;
+        transition: all 0.3s ease-in-out;
+        &.active{
+            background: $purpleDark;
+            border-left: 3px solid $greenNeon;
+            .fa{
+                color:$greenNeon;
+            }
+        }
+        &:hover{
+            background: $purpleDark;
+            border-left: 3px solid $greenNeon;
+            .fa{
+                color:$greenNeon;
+            }
+            
+        }
+       
+       .fa{
+            color:$greyDark;
+            font-size: 1.4rem;
+            margin-right: 0.8rem;
+            width:30px;
+            position: relative;
+            top:2px;
+            display:inline-block;
+        }
+    }
+
 }
